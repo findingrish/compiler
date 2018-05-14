@@ -1,0 +1,37 @@
+_main
+	record #marks
+		type int : maths; 
+		type int: physics; 
+		type int: chemistry;
+	endrecord;
+
+
+
+	type record #marks : b3b3;
+	type record #marks : b3b4;
+	type int:b3;
+	type int:b4;
+
+	b3 <--- 27;
+	b4 <--- 10;
+
+	b3 <--- b3+b3-b4;
+	b3 <--- (2+3)*2-2-2;
+
+	write(b3);
+
+	b3b3.maths <--- 4;
+	b3b3.physics <--- 5;
+	b3b3.chemistry <--- 6;
+
+	write(b3b3);
+
+	b3b4 <--- b3b3 + b3b3 + b3b3;
+	write(b3b4);
+	b3b4 <--- b3b4+b3b4-b3b3;
+	write(b3b4);
+	b3b4 <--- b3b4/16/4;
+	write(b3b4);
+return;
+
+end

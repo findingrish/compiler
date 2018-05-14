@@ -1,0 +1,23 @@
+_main
+
+type int : b3;
+type int : b4; 
+type int : b5;
+type int : b6;
+type int :b7;
+
+b3 <--- 0;
+b4 <--- 10;
+b5 <--- 100;
+b6 <--- 200;
+
+read(b7);
+read(b3);
+while(b7 <= b3)
+write(b7);
+b7 <--- b7 + 1;
+endwhile
+
+
+return;
+end

@@ -1,0 +1,50 @@
+program TK_FUNID TK_MAIN .
+mainFunction TK_MAIN .
+otherFunctions TK_FUNID .
+function TK_FUNID .
+input_par TK_INPUT .
+output_par TK_OUTPUT .
+parameter_list TK_INT TK_REAL TK_RECORD .
+dataType TK_INT TK_REAL TK_RECORD .
+primitiveDatatype TK_INT TK_REAL .
+constructedDatatype TK_RECORD .
+remaining_list TK_COMMA .
+stmts TK_ID TK_WHILE TK_TYPE TK_SQL TK_IF TK_READ TK_WRITE TK_RETURN TK_CALL TK_RECORD .
+typeDefinitions TK_RECORD .
+typeDefinition TK_RECORD .
+fieldDefinitions TK_TYPE .
+fieldDefinition TK_TYPE .
+moreFields TK_TYPE .
+declarations TK_TYPE .
+declaration TK_TYPE .
+global_or_not TK_COLON .
+otherStmts TK_ID TK_WHILE TK_SQL TK_IF TK_READ TK_WRITE TK_CALL .
+stmt TK_ID TK_WHILE TK_SQL TK_IF TK_READ TK_WRITE TK_CALL .
+assignmentStmt TK_ID .
+singleOrRecId TK_ID .
+new_24 TK_DOT .
+funCallStmt TK_SQL TK_CALL .
+outputParameters TK_SQL .
+inputParameters TK_SQL .
+iterativeStmt TK_WHILE .
+conditionalStmt TK_IF .
+elsePart TK_ENDIF TK_ELSE .
+ioStmt TK_READ TK_WRITE .
+allVar TK_ID TK_NUM TK_RNUM .
+arithmeticExpression TK_ID TK_NUM TK_RNUM TK_OP .
+expPrime TK_PLUS TK_MINUS .
+term TK_ID TK_NUM TK_RNUM TK_OP .
+termPrime TK_MUL TK_DIV .
+factor TK_ID TK_NUM TK_RNUM TK_OP .
+highPrecedenceOperator TK_MUL TK_DIV .
+lowPrecedenceOperators TK_PLUS TK_MINUS .
+all TK_ID TK_NUM TK_RNUM .
+temp TK_DOT .
+booleanExpression TK_ID TK_NUM TK_RNUM TK_OP TK_NOT .
+var TK_ID TK_NUM TK_RNUM .
+logicalOp TK_AND TK_OR .
+relationalOp TK_LT TK_LE TK_EQ TK_GT TK_NE TK_GE .
+returnStmt TK_RETURN .
+optionalReturn TK_SQL .
+idList TK_ID .
+more_ids TK_COMMA .

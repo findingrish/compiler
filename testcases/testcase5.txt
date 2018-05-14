@@ -1,0 +1,58 @@
+_main
+
+ record  #rec 
+    type int : len; 
+    type int : height; 
+  endrecord; 
+
+  record #marks
+		type real : maths; 
+		type real: physics; 
+		type real: chemistry;
+	endrecord;
+
+  type record #rec:b2;
+  type record #rec:b3;
+  type record #rec:b4;
+  type record #marks:c3c3;
+  type int : c4;
+  type int : b5;
+  type int : b3b4;
+
+ 	b2 <--- b2*b3;
+ 	b2 <--- b2/b3;
+ 	b2 <--- c3c3 + b3;
+ 	c3c3 <--- (2*c3c3*3)/5;
+  b2 <--- b3 + b4;
+  b2 <--- b3*b4;
+  b2 <--- b3*5;
+  b2<--- b3/5;
+  b2 <--- 5/b2;
+  b4 <--- b2 -3;
+  b3 <--- b2/b3;
+
+  if(2 < 3.52)
+  then 
+  write(b2);
+  endif
+
+
+
+  while(((c4 < b5) @@@ (c4 == b5)) &&& (c4 > b3b4))
+  	if(c4 < b5)
+  	then
+  		c4 <--- 3;
+  	endif
+  endwhile
+
+  while(((c4 < b5) @@@ (c4 == b5)) &&& (c4 > b3b4))
+  	while(((c4 < b5) @@@ (c4 == b5)) &&& (c4 > b3b4))
+  	if(c4 < b5)
+  	then
+  		c4 <--- 3;
+  	endif
+  endwhile
+  endwhile
+
+return;
+end

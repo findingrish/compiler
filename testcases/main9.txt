@@ -1,0 +1,28 @@
+% This is a factorial Program.
+
+_main
+% This is a factorial Program.
+
+type int: b2b2;
+type int : b3;
+type int : d5cb34567;  % This is a factorial Program.
+
+
+read(b2b2);
+b3 <--- 1;
+d5cb34567 <--- 1;
+while(b3 <= b2b2)	
+	d5cb34567 <--- d5cb34567*b3;   % This is a factorial Program.
+	b3 <--- b3 + 1;
+endwhile
+
+write(d5cb34567);  % This is a factorial Program.
+% This is a factorial Program.
+% This is a factorial Program.
+% This is a factorial Program.
+
+return;
+
+end
+%sfd
+%aadsadasdasd

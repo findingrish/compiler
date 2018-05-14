@@ -1,0 +1,18 @@
+_main
+	type int :b3c45;
+	type int : b2d6;
+	type int :c2b5;
+	type int : d4;
+	read(b3c45);
+	read(b2d6);
+	d4<--- 83;
+	if(b3c45 > b2d6)
+	then
+		d4<---d4+19;
+	else
+		d4<---d4-200;
+	endif
+	write(d4);
+	return;
+end
+

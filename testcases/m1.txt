@@ -1,0 +1,15 @@
+_main
+	type int :b3c3;
+	type int : d2b2;
+	type int : c2;
+	type int : d5cc2;
+	d2b2<--- 31;
+	read(b3c3);
+	read(c2);
+	read(d5cc2);
+
+	d5cc2 <--- 10+ d5cc2-b3c3-c2;
+	write(d5cc2);
+	return;
+end
+

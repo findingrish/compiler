@@ -1,0 +1,36 @@
+%many while program
+_main
+
+type int : b3;
+type int : b4; 
+type int : b5;
+type int : b6;
+type int :b7;
+
+b3 <--- 0;
+b4 <--- 10;
+b5 <--- 100;
+b6 <--- 200;
+
+
+
+while(b6>=150)
+	while(b5>=60)
+		while(b4<=30)
+			while(b3<=15)
+			b6 <--- b6 -4;
+			b5 <--- b5 - 3;
+			b4 <--- b4 + 2;
+			b3 <--- b3 + 1;
+			%write(b3);
+			%write(b4);
+			%write(b5);
+			%write(b6);
+			endwhile
+
+		endwhile
+	endwhile
+endwhile
+
+return;
+end

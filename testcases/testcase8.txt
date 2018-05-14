@@ -1,0 +1,24 @@
+%// Batch : 57
+%// Authors
+%// Anchit Jain : f2012570@pilani.bits-pilani.ac.in
+%// Rishabh Singh : f2012691@pilani.bits-pilani.ac.in
+
+
+_main
+
+	%record #marks
+	%	type int : maths; 
+	%	type int: physics; 		
+	%endrecord;
+%	type record #marks:b2;
+%	type record #marks:b3;
+	type int :c2;
+
+	
+		if(~((c2 < 5) &&& (c2 < 4)))
+		then 
+		c2 <--- 6;
+		endif
+	
+	return;
+end

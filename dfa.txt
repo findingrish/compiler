@@ -1,0 +1,165 @@
+NumOfState: 50
+NumFinalState: 36
+FinalStateListWithName:
+StateNum      StateName
+1      		  TK_FIELDID
+2             TK_FIELDID
+3             TK_FIELDID
+4             TK_FIELDID
+5             TK_ID
+6             TK_ID
+7             TK_ID
+8             TK_NUM
+11            TK_RNUM
+13            TK_FUNID
+14            TK_FUNID
+15            TK_FUNID
+17            TK_COMMENT
+18            TK_SQL
+19            TK_SQR
+21            TK_RECORDID
+22            TK_DOT
+23            TK_COLON
+24            TK_SEM
+25            TK_OP
+26            TK_CL
+27            TK_PLUS
+28            TK_MINUS
+29            TK_MUL
+30            TK_DIV
+33            TK_AND
+36            TK_OR
+37            TK_NOT
+38            TK_LT
+39            TK_LE
+41            TK_NE
+42            TK_GT
+43            TK_GE
+45            TK_EQ
+48            TK_ASSIGNOP
+49            TK_COMMA
+NumMapping: 8
+Mapping:
+Start     End      Num        Range
+48        57        0         [0-9]
+50        55        1         [2-7]
+97        122       2         [a-z]
+101       122       3		  [e-z]		
+98        100       4         [b-d]
+65        90        5         [A-Z]
+0         9         6         LT\n
+11        127       7         GT\n
+Keyword: 24
+with
+parameters
+end
+while
+int
+real
+type
+_main
+global
+parameter
+list
+input
+output
+endwhile
+if
+then
+endif	
+read
+write
+return
+call
+record
+endrecord
+else
+Transition:
+CurSt       InpType      Input          NextState
+0             0             #             20            
+0             0             ;             24            
+0             0             .             22            
+0             0             :             23            
+0             0             ~             37            
+0             0             (             25            
+0             0             )             26            
+0             0             +             27            
+0             0             -             28            
+0             0             *             29            
+0             0             /             30            
+0             0             &             31            
+0             0             @             34            
+0             0             !             40            
+0             0             <             38            
+0             0             >             42            
+0             0             =             44
+0             0             ,             49            
+0             0             a             3            
+0             0             _             12            
+0             0             %             16            
+0             0             [             18            
+0             0             ]             19            
+0             1             3             1            
+0             1             4             4            
+0             1             0             8            
+1             1             2             2            
+2             1             2             2            
+3             1             2             2            
+4             1             2             2            
+4             1             1             5            
+5             1             4             6            
+5             1             1             7            
+6             1             4             6            
+6             1             1             7            
+7             1             1             7                        
+8             1             0             8            
+8             0             .             9            
+9             1             0             10            
+10            1             0             11            
+11            2             2              2           
+12            1             2             13            
+12            1             5             13            
+13            1             2             14            
+13            1             5             14            
+13            1             0             15            
+14            1             2             14            
+14            1             5             14            
+14            1             0             15            
+15            1             0             15            
+16            1             6             16            
+16            1             7             16            
+16            0             10             17            
+17            2             2              2
+18            2             2              2            
+19            2             2              2            
+20            1             2             21            
+21            1             2             21            
+22            2             2              2            
+23            2             2              2            
+24            2             2              2
+25            2             2              2
+26            2             2              2
+27            2             2              2
+28            2             2              2
+29            2             2              2
+30            2             2              2
+31            0             &             32            
+32            0             &             33            
+33            2             2              2
+34            0             @             35            
+35            0             @             36            
+36            2             2              2
+37            2             2              2
+38            0             =             39            
+38            0             -             46            
+39            2             2              2
+40            0             =             41            
+41            2             2              2
+42            0             =             43            
+43            2             2              2
+44            0             =             45            
+45            2             2              2
+46            0             -             47            
+47            0             -             48            
+48            2             2              2            
+49            2             2              2

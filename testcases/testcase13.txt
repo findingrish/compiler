@@ -1,0 +1,31 @@
+% Exponentiation.
+% The following function computes the function value for the given inputs 
+
+_main
+
+ type int: b4b5;
+ type int: b2b3;
+ type int : c2c5;
+ type int : c3c2;
+  read(b4b5);
+  read(b2b3);
+% The following function computes the function value for the given inputs 
+  if((b4b5 < 10) @@@ (b4b5 > 100))
+  then
+  while(b4b5 < 50)
+  	b2b3 <--- b2b3*b2b3;
+  	b4b5 <--- b4b5 + 1;
+    b6b6 <--- 5;
+  endwhile
+  b3b3 <--- 7;
+  else
+  	b4b5 <--- b4b5*2;
+  	 while(b4b5 < 50)     % The following function computes the function value for the given inputs 
+  		read(c2c5);
+  		c2c5 <--- c2c3*b4b3;
+  		b4b5 <--- b4b5 + c2c5;
+  	endwhile
+  endif
+% The following function computes the function value for the given inputs 
+  return;
+ end

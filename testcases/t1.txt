@@ -1,0 +1,63 @@
+%Test Case 1
+%Following function computes the sum of user defined real numbers
+%The variable d3 maintains the sum of values
+
+_addRecords input parameter list[int b2, record #marks c3b5, record #marks c3b6]
+output parameter list [ record #marks b3c45];
+	[c3b5] <---call _sumN with parameters [b2]; 
+	[c3b6]<---call _readMarks with parameters [b2];
+	b3c45 <--- c3b5 + c3b6;
+	return [b3c45];
+end
+
+_sumN  input parameter list [int d5cc34, real c3]  
+output parameter list[real d3];
+	record #marks
+		type real : circle; 
+		type real: rectangle; 
+		type real: triangle;
+	endrecord;
+	type record #marks:c3b6;
+	type record #marks:b2b2;
+	type int : b5b567:global;
+	type int : b3;
+	type real : c3bd;
+	b5b567 <--- 1;
+	d3 <--- 0.00;
+	while ( b5b567 <= d5cc34)
+		read( c3bd);
+		d3 <--- d3 + c3bd;
+	endwhile
+	[c3b6, b2b2]<---call _readMarks with parameters [b2];
+	b2b2<--- b3+d3;
+	return [b5b567];
+end
+
+
+
+_readMarks input parameter list[int b7]
+output parameter list [ record #marks b3c2];
+	read(b3c2.circle);
+	read(b3c2.rectangle);
+	read(b3c2.triangle);
+	return [b3c2];
+end
+_newF  input parameter list [ real c5bb3]  
+output parameter list[real d4cc33];
+	type real :b2c44;
+	type int: c6;
+		[d4cc33]<--- call _newF with parameters [b2c44];	
+        return [c6];
+end
+
+_main
+	type real :c4bd56;
+	type int :c2;
+	type int : b5b567;
+	b3 <--- 7;
+	read( c2);
+	[c4bd56]<--- call _sumN with parameters [c2];
+	write(c4bd56);
+	c2 <--- c4bd56 + 23 +c2;
+	return;
+end

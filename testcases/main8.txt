@@ -1,0 +1,42 @@
+% Fibonacci series.
+
+_main
+
+type int : b2b2; %reads user input
+type int : b3;
+type int : b4; 
+type int : b5;
+type int : d2; %contains final result
+
+%We are calculating fib(b2b2)
+read(b2b2);
+
+b3 <--- 1;
+b4 <--- 1;
+b5 <--- 2;
+
+if(b2b2 >= 2)
+then
+	while(b5 <= b2b2)
+		d2 <--- b3 + b4;
+		b3 <--- b4;
+		b4 <--- d2;
+		b5 <--- b5 + 1;
+	endwhile
+else
+	if(b2b2 >= 0)
+	then
+		% 0 <= b2b2 <= 1
+		d2 <--- 1;
+	else
+		% b2b2 < 0, therefore simply return
+		b4 <--- 5;
+	endif
+
+endif
+
+
+write(d2); 
+return;
+
+end

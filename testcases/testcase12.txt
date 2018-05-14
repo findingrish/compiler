@@ -1,0 +1,55 @@
+% This is a program with function 
+_recordDemo1 
+	input parameter list [record #book d5cc35, record #book d2cd]
+	output parameter list [record #book d3];
+	d3 <--- d5cc34 + d2cd;
+	return [d3];
+end
+
+% This is a program with function .
+% This is a program with function .
+% This is a program with function .
+% This is a program with function .% This is a program with function .
+
+_recordDemo2 
+
+	input parameter list [record #book d5cc33, record #book d2cd]
+	output parameter list [record #book d3];
+	record #cook
+		type int : edition;
+		type real : price;
+		type int : help;
+	endrecord;
+	d3 <--- d5cc34 + d2cd;
+	return [d3];
+end
+
+_recordDemo3 
+	input parameter list [record #book d5cc36, record #book d2cd]
+	output parameter list [record #book d3];   % This is a program with function .
+	d3 <--- d5cc34 + d2cd;
+	return [d3];
+end
+_main
+	record #book
+		type int : edition;
+		type real : price;
+	endrecord;
+	type int: b4b5;
+ 	type int: b2b3;
+ 	type record #dook : b2;
+ 	type record #cook : b2;
+	type record #book : b2;
+	type record #book : c2;
+	type record #book : d2;
+	
+	b2.edition <--- 3;
+	b2.price <--- 24.95;
+	c2.edition <--- 2;
+	c2.price <--- 98.80;  % This is a program with function .
+	
+	[d2] <--- call _function1 with parameters [b2,c2];
+	
+	write(d2);
+	return;
+end

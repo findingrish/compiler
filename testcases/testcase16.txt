@@ -1,0 +1,39 @@
+_recordDemo1 
+	input parameter list [record #book d5cc35, record #book d5cc35]
+	output parameter list [record #book d3];
+	type int: d5cc35;
+	type real: b3b3;
+	d3 <--- d5cc34 + d2cd;
+	return [d3];
+end
+
+_recordDemo2 
+
+	input parameter list [record #book d5cc33, record #book d2cd]
+	output parameter list [record #book d3];
+	record #cook
+		type int : edition;
+		type real : price;
+		type int : pain;
+	endrecord;
+	type record #book : b2;
+	type int: b4b5;
+	d3 <--- d5cc34 + d2cd;
+	return [d3];
+end
+
+_main
+	record #book
+		type int : edition;
+		type real :edition;
+		type real :edition;
+		type real :edition;
+	endrecord;
+	
+	type record #book : b2;
+	type int: b4b5;
+ 	type int: b4b5;
+ 	d2.edition <--- 5;
+ 	b2 <--- 6;
+return;
+end

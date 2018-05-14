@@ -1,0 +1,11 @@
+%// Batch : 57
+%// Authors
+%// Anchit Jain : f2012570@pilani.bits-pilani.ac.in
+%// Rishabh Singh : f2012691@pilani.bits-pilani.ac.in
+
+_main
+
+type int: d7d7;
+
+return;
+end

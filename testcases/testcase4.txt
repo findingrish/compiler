@@ -1,0 +1,127 @@
+
+%Semantic check test case
+
+%This function doesn't returns any value. Doubt - Is this the correct way to declare void function?
+_voidFunction input parameter list[int c3c];
+
+	type int : c2c;
+	c2c <--- 8;
+
+	%returning in void function.
+	return[c2c];
+
+end
+
+%Function overloading
+_voidFunction input parameter list[real c2c];
+	
+	write(c3c);
+	return;
+end
+
+%Recursive function
+_recursiveFunction input parameter list[int c4c]
+output parameter list [real d2d];
+	
+	type int: d5d6;
+	[d5d6] <--- call _recursiveFunction with parameters [c4c];
+	write(d5d6);
+	return;
+end
+
+%This function calls _realFunction before is defintion
+_callrealFunction input parameter list[int c3, int c4, int c5]
+output parameter list [real c6];
+	
+	[c3] <--- call _realFunction with parameters [c3, c4, c5];
+	write(c3);
+	return;
+end
+ 
+_realFunction input parameter list[int c3, int c4, int c5]
+output parameter list [real c6];
+	
+
+	record #rec
+		type int : m; 
+		type real: p; 
+	endrecord;
+
+	%b3b7 has been decalred globally in main, so it can't be declared here.
+	type int : b3b7;
+
+	type record #rec : c2c3;
+
+	c2c3.m <--- 3;
+	c2c3.p <--- 3.23;
+
+
+	%d5cb34567 has been declared in main, so should be accessible here.
+	write(d5cb34567);
+
+	%c6 hasn't been assigned any value, yet being returned.
+	return [c6];
+end
+
+_main 
+
+	%rec record has been declared in _realFunction so should be accessible here
+	type record #rec : c2c3;
+
+	type int : b5;
+	type int : d5cb34567;
+	type int :  b3b7 : global;
+	type real: c3;
+
+	%Declaring b5 again in same scope.
+	type int : b5;
+
+	%Assigning value to undeclared variable.
+	c7c <--- 1;
+
+	read(d5cb34567);
+	read(b3b7);
+
+	%Arithmetic expression inside if
+	if((d5cb34567 < b3b7)@@@(d5cb34567>5)) 
+	then
+		write(d5cb34567);
+	else
+		write(b3b7);
+	endif
+
+	b5 <--- 5;
+
+	%types of LHS and RHS are different.
+	c3 <--- b5;
+
+	b5 <--- d5cb34567 - 1;
+
+	%infinite while, b5 hasnt been redefined inside while.
+	while(b5 < d5cb34567)
+		write(b5);
+	endwhile
+
+	%calling function with wrong number of arguments
+	[c3] <--- call _realFunction with parameters [b5];
+
+	%calling function with undeclared argument
+	[c3] <--- call _realFunction with parameters [b6,b5,b5];
+
+	%type of parameters passed to function are different than required by function
+	[c3] <--- call _realFunction with parameters [c3,b5,b5];
+
+
+	[c3] <--- call _realFunction with parameters [b5, d5cb34567, b3b7];
+	write(c3);
+
+	
+
+	c2c3.m <--- 3;
+	c2c3.p <--- 3.33;
+	
+	write(c2c3.m);
+	write(c2c3.p);
+
+	return;
+end
